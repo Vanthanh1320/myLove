@@ -1,7 +1,13 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   /* background: #000; */
   /* line-height: 2; */
+  overflow: hidden;
 }
 
 .c {
@@ -20,6 +26,13 @@ body {
   }
 }
 
+img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
 .fadeIn {
   /*animation-name: fadeIn;*/
   animation: fadeIn 1s both;
@@ -27,10 +40,14 @@ body {
 
 .content {
   font-size: 108px;
-  padding: 200px 0;
+  padding: 100px 0;
   text-align: center;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+}
+
+.content span {
+  font-size: 100px;  
 }
 
 .animated {
@@ -43,6 +60,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   position: relative;
 }
@@ -51,7 +69,7 @@ body {
   height: fit-content;
   border-radius: 20px;
   padding: 15px 30px;
-  width: 200px;
+  width: 250px;
   background-color: #542246;
   color: #fff;
   cursor: pointer;
@@ -60,4 +78,16 @@ body {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.btn-wrapper span {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.d-none {
+  display: none;
 }
